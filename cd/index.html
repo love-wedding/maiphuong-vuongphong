@@ -2022,17 +2022,37 @@
       }
 
       // 5. URL Guest name
-      function applyGuestName() {
-        try {
-          const params = new URLSearchParams(window.location.search);
-          const guest = params.get('guest') || params.get('to') || params.get('u') || params.get('name');
-          if (guest) {
-            document.querySelectorAll('.slr-ui-guest-badge h2, .canvas-guest-name, [data-dynamic-field="guestName"], [data-node-id="87RNR5GKM4"] div div div').forEach(el => {
-              el.textContent = guest;
-            });
-          }
-        } catch (err) { }
+      // function applyGuestName() {
+      //   try {
+      //     const params = new URLSearchParams(window.location.search);
+      //     const guest = params.get('guest') || params.get('to') || params.get('u') || params.get('name');
+      //     if (guest) {
+      //       document.querySelectorAll('.slr-ui-guest-badge h2, .canvas-guest-name, [data-dynamic-field="guestName"], [data-node-id="87RNR5GKM4"] div div div').forEach(el => {
+      //         el.textContent = guest;
+      //       });
+      //     }
+      //   } catch (err) { }
+      // }
+
+      // 5. URL Guest name
+function applyGuestName() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const guest = params.get('guest') || params.get('to') || params.get('u') || params.get('name');
+    if (guest) {
+      // Badge ở màn hình phong bì và các field khác: gán bình thường
+      document.querySelectorAll('.slr-ui-guest-badge h2, .canvas-guest-name, [data-dynamic-field="guestName"]').forEach(el => {
+        el.textContent = guest;
+      });
+
+      // Khối "Quý Khách" dùng white-space: pre-line nên cần giữ dòng trống ở đầu
+      const guestBox = document.querySelector('.text-box-component[data-node-id="87RNR5GKM4"] > div > div > div');
+      if (guestBox) {
+        guestBox.textContent = '\n' + guest;
       }
+    }
+  } catch (err) { }
+}
 
       // 6. Layout resize
       function updateLayout() {
