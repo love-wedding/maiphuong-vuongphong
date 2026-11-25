@@ -7,7 +7,7 @@
   <title>Thiệp cưới MAI PHƯƠNG & VƯƠNG PHONG</title>
 
 
-    <!-- Open Graph / Facebook / Zalo -->
+  <!-- Open Graph / Facebook / Zalo -->
   <meta name="description"
     content="Trân trọng kính mời quý khách đến tham dự lễ vu quy của Mai Phương & Vương Phong vào ngày 12.12.2026." />
   <meta property="og:type" content="website" />
@@ -297,31 +297,111 @@
       gap: 22px;
       margin-top: 18px;
     }
+
     .card-action-modal__gift-details {
-      display: grid; gap: 12px; margin: 0; padding: 18px;
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 18px;
       background: linear-gradient(145deg, #fbfaf5, #f2f3eb);
-      border: 1px solid #e4e5d9; border-radius: 16px;
+      border: 1px solid #e4e5d9;
+      border-radius: 16px;
       box-shadow: 0 8px 22px #36433212;
     }
-    .card-action-modal__gift-details div { display: grid; gap: 4px; }
-    .card-action-modal__gift-details dt { color: #798071; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
-    .card-action-modal__gift-details dd { margin: 0; color: #364332; font-size: 14px; font-weight: 650; overflow-wrap: anywhere; }
-    .card-action-modal__account-row { display: flex; align-items: center; gap: 8px; }
-    .card-action-modal__copy-account, .card-action-modal__download-qr {
-      display: inline-flex; justify-content: center; align-items: center; gap: 7px;
-      min-height: 38px; padding: 0 13px; border: 1px solid #d7ddcf; border-radius: 10px;
-      background: #fff; color: #45513f; font: 600 13px/1 Inter, system-ui, sans-serif;
-      text-decoration: none; cursor: pointer; transition: background .18s, border-color .18s, transform .18s;
+
+    .card-action-modal__gift-details div {
+      display: grid;
+      gap: 4px;
     }
-    .card-action-modal__copy-account:hover, .card-action-modal__download-qr:hover { background: #f4f6ef; border-color: #aeb9a2; }
-    .card-action-modal__copy-account:active, .card-action-modal__download-qr:active { transform: translateY(1px); }
-    .card-action-modal__qr-wrap { display: grid; justify-items: center; gap: 10px; }
-    .card-action-modal__qr { box-sizing: border-box; width: 100%; height: auto; padding: 8px; background: #fff; border: 1px solid #e5e7df; border-radius: 14px; box-shadow: 0 8px 24px #36433214; }
-    .card-action-modal__gift-feedback { min-height: 18px; margin: 7px 0 0; color: #526849; font-size: 12px; }
+
+    .card-action-modal__gift-details dt {
+      color: #798071;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .card-action-modal__gift-details dd {
+      margin: 0;
+      color: #364332;
+      font-size: 14px;
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+
+    .card-action-modal__account-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-action-modal__copy-account,
+    .card-action-modal__download-qr {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 0 13px;
+      border: 1px solid #d7ddcf;
+      border-radius: 10px;
+      background: #fff;
+      color: #45513f;
+      font: 600 13px/1 Inter, system-ui, sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .18s, border-color .18s, transform .18s;
+    }
+
+    .card-action-modal__copy-account:hover,
+    .card-action-modal__download-qr:hover {
+      background: #f4f6ef;
+      border-color: #aeb9a2;
+    }
+
+    .card-action-modal__copy-account:active,
+    .card-action-modal__download-qr:active {
+      transform: translateY(1px);
+    }
+
+    .card-action-modal__qr-wrap {
+      display: grid;
+      justify-items: center;
+      gap: 10px;
+    }
+
+    .card-action-modal__qr {
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding: 8px;
+      background: #fff;
+      border: 1px solid #e5e7df;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px #36433214;
+    }
+
+    .card-action-modal__gift-feedback {
+      min-height: 18px;
+      margin: 7px 0 0;
+      color: #526849;
+      font-size: 12px;
+    }
+
     @media (max-width: 480px) {
-      .card-action-modal__gift { grid-template-columns: 1fr; gap: 14px; }
-      .card-action-modal__qr-wrap { grid-row: 1; }
-      .card-action-modal__qr { width: min(100%, 220px); }
+      .card-action-modal__gift {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .card-action-modal__qr-wrap {
+        grid-row: 1;
+      }
+
+      .card-action-modal__qr {
+        width: min(100%, 220px);
+      }
     }
 
     .card-action-modal__field {
@@ -395,7 +475,11 @@
       font-size: 12px;
       line-height: 1.5;
     }
-    .rsvp-swal-popup { border-radius: 18px !important; font-family: Inter, system-ui, sans-serif !important; }
+
+    .rsvp-swal-popup {
+      border-radius: 18px !important;
+      font-family: Inter, system-ui, sans-serif !important;
+    }
 
     body.card-action-modal-open {
       overflow: hidden;
@@ -411,8 +495,7 @@
 </head>
 
 <body>
-  <audio loop preload="auto" aria-hidden="true"
-    src="../music.mp3"></audio>
+  <audio loop preload="auto" aria-hidden="true" src="../music.mp3"></audio>
   <div class="card-public-root">
     <div class="canvas-public-view min-h-screen bg-[#eeeeee]"
       style="--canvas-phone-max-width:500px;--card-phone-max-width:500px">
@@ -653,45 +736,78 @@
                     <div class="calendar componentBOX"
                       style="width: 100%; height: 100%; color: rgb(255, 255, 255); font-size: 14px; font-family: &quot;BrikeyMoura Regular&quot;;">
                       <div class="template-three">
-                        <div class="empty">
-                          <div></div>
-                        </div>
-                        <div class="empty">
-                          <div></div>
-                        </div>
-                        <div class="empty">
-                          <div></div>
-                        </div>
-                        <div class="empty">
-                          <div></div>
-                        </div>
-                        <div class="empty">
-                          <div></div>
-                        </div>
-                        <div class="calendar-day"><span class="calendar-day-number">1</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">2</span></div>
 
-                        <div class="calendar-day"><span class="calendar-day-number">3</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">4</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">5</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">6</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">7</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">8</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">9</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">10</span></div>
-                        <div class="calendar-day"><span class="calendar-day-number">11</span></div>
-                        <!-- <div class="calendar-day"><span class="calendar-day-number">12</span></div> -->
+                        <!-- Tuần đầu: 1/12/2026 là thứ Ba -->
+                        <div class="empty">
+                          <div></div>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">1</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">2</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">3</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">4</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">5</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">6</span>
+                        </div>
+
+                        <!-- Tuần thứ 2 -->
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">7</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">8</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">9</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">10</span>
+                        </div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">11</span>
+                        </div>
+
+                        <!-- Ngày cưới 12/12/2026 - Thứ Bảy -->
                         <div class="calendar-day calendar-day--selected">
-                          <div class="calendar-day-mark"><span class="calendar-day-number"
-                              style="color: rgb(243, 150, 161);">12</span><svg class="calendar-day-heart"
-                              viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="rgb(243, 150, 161)"
-                              stroke-width="1.2" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet">
+                          <div class="calendar-day-mark">
+                            <span class="calendar-day-number" style="color: rgb(243, 150, 161);">12</span>
+
+                            <svg class="calendar-day-heart" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+                              stroke="rgb(243, 150, 161)" stroke-width="1.2" stroke-linejoin="round"
+                              preserveAspectRatio="xMidYMid meet">
+
                               <path
                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
                               </path>
-                            </svg></div>
+                            </svg>
+                          </div>
                         </div>
-                        <div class="calendar-day"><span class="calendar-day-number">13</span></div>
+
+                        <div class="calendar-day">
+                          <span class="calendar-day-number">13</span>
+                        </div>
+
+                        <!-- Tuần thứ 3 -->
                         <div class="calendar-day"><span class="calendar-day-number">14</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">15</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">16</span></div>
@@ -699,6 +815,8 @@
                         <div class="calendar-day"><span class="calendar-day-number">18</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">19</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">20</span></div>
+
+                        <!-- Tuần thứ 4 -->
                         <div class="calendar-day"><span class="calendar-day-number">21</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">22</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">23</span></div>
@@ -706,10 +824,24 @@
                         <div class="calendar-day"><span class="calendar-day-number">25</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">26</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">27</span></div>
+
+                        <!-- Tuần thứ 5 -->
                         <div class="calendar-day"><span class="calendar-day-number">28</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">29</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">30</span></div>
                         <div class="calendar-day"><span class="calendar-day-number">31</span></div>
+
+                        <!-- Các ô trống cuối tháng -->
+                        <div class="empty">
+                          <div></div>
+                        </div>
+                        <div class="empty">
+                          <div></div>
+                        </div>
+                        <div class="empty">
+                          <div></div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -1291,7 +1423,7 @@
                     style="position: relative; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; opacity: 1; background-color: transparent; padding: 0px; border-radius: 0px;">
                     <div disabled="" contenteditable="false"
                       style="width: 100%; min-width: 20px; font-size: 24px; text-align: center; font-weight: bold; font-style: normal; color: rgb(255, 255, 255); font-family: &quot;BrikeyMoura Regular&quot;; line-height: normal; letter-spacing: 0px; text-transform: uppercase; text-decoration: none; outline: none; word-break: break-word; pointer-events: none;">
-                      Bữa cơm thân mật nhà trai&nbsp;</div> 
+                      Bữa cơm thân mật nhà trai&nbsp;</div>
                   </div>
                 </div>
               </div>
@@ -1847,8 +1979,7 @@
             <div class="canvas-public-watermark-content"><span style="font-size: 12px; letter-spacing: 1px;">Made with<a
                   href="https://ngaychungdoi.com" class="canvas-public-watermark-link">Ngày Chung Đôi</a></span></div>
           </div> -->
-        </div><audio loop="" preload="auto" aria-hidden="true"
-          src="../music.mp3"></audio>
+        </div><audio loop="" preload="auto" aria-hidden="true" src="../music.mp3"></audio>
       </div>
     </div>
   </div>
@@ -2035,24 +2166,24 @@
       // }
 
       // 5. URL Guest name
-function applyGuestName() {
-  try {
-    const params = new URLSearchParams(window.location.search);
-    const guest = params.get('guest') || params.get('to') || params.get('u') || params.get('name');
-    if (guest) {
-      // Badge ở màn hình phong bì và các field khác: gán bình thường
-      document.querySelectorAll('.slr-ui-guest-badge h2, .canvas-guest-name, [data-dynamic-field="guestName"]').forEach(el => {
-        el.textContent = guest;
-      });
+      function applyGuestName() {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const guest = params.get('guest') || params.get('to') || params.get('u') || params.get('name');
+          if (guest) {
+            // Badge ở màn hình phong bì và các field khác: gán bình thường
+            document.querySelectorAll('.slr-ui-guest-badge h2, .canvas-guest-name, [data-dynamic-field="guestName"]').forEach(el => {
+              el.textContent = guest;
+            });
 
-      // Khối "Quý Khách" dùng white-space: pre-line nên cần giữ dòng trống ở đầu
-      const guestBox = document.querySelector('.text-box-component[data-node-id="87RNR5GKM4"] > div > div > div');
-      if (guestBox) {
-        guestBox.textContent = '\n' + guest;
+            // Khối "Quý Khách" dùng white-space: pre-line nên cần giữ dòng trống ở đầu
+            const guestBox = document.querySelector('.text-box-component[data-node-id="87RNR5GKM4"] > div > div > div');
+            if (guestBox) {
+              guestBox.textContent = '\n' + guest;
+            }
+          }
+        } catch (err) { }
       }
-    }
-  } catch (err) { }
-}
 
       // 6. Layout resize
       function updateLayout() {
@@ -2289,16 +2420,16 @@ function applyGuestName() {
   </script>
 
   <script>
-(() => {
-    // NGÀY GIỜ ĐÍCH CỦA COUNTDOWN
-    const targetDate = new Date('2026-12-12T09:00:00+07:00').getTime();
+    (() => {
+      // NGÀY GIỜ ĐÍCH CỦA COUNTDOWN
+      const targetDate = new Date('2026-12-12T09:00:00+07:00').getTime();
 
-    const countdown = document.querySelector('.plugin-countdown');
-    if (!countdown) return;
+      const countdown = document.querySelector('.plugin-countdown');
+      if (!countdown) return;
 
-    const items = countdown.children;
+      const items = countdown.children;
 
-    function updateCountdown() {
+      function updateCountdown() {
         const now = Date.now();
         let distance = targetDate - now;
 
@@ -2310,29 +2441,29 @@ function applyGuestName() {
         const seconds = Math.floor((distance % 60000) / 1000);
 
         [days, hours, minutes, seconds].forEach((value, index) => {
-            items[index].children[0].textContent = value;
+          items[index].children[0].textContent = value;
         });
-    }
+      }
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-})();
-</script>
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    })();
+  </script>
 
-<script>
-(() => {
-  const mapUrls = {
-    'oxea_sD-us': 'https://maps.app.goo.gl/K5CfXHQoDU7AXBos8',
-    'bAEsnUsTek': 'https://maps.app.goo.gl/9FPqNNiGUbpViFqSA?g_st=ic',
-  };
-  Object.entries(mapUrls).forEach(([nodeId, mapUrl]) => {
-    const button = document.querySelector(`[data-node-id="${nodeId}"]`);
-    if (!button) return;
-    button.style.cursor = 'pointer';
-    button.addEventListener('click', () => window.open(mapUrl, '_blank', 'noopener'));
-  });
-})();
-</script>
+  <script>
+    (() => {
+      const mapUrls = {
+        'oxea_sD-us': 'https://maps.app.goo.gl/K5CfXHQoDU7AXBos8',
+        'bAEsnUsTek': 'https://maps.app.goo.gl/9FPqNNiGUbpViFqSA?g_st=ic',
+      };
+      Object.entries(mapUrls).forEach(([nodeId, mapUrl]) => {
+        const button = document.querySelector(`[data-node-id="${nodeId}"]`);
+        if (!button) return;
+        button.style.cursor = 'pointer';
+        button.addEventListener('click', () => window.open(mapUrl, '_blank', 'noopener'));
+      });
+    })();
+  </script>
 
 </body>
 
